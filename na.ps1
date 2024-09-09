@@ -1,5 +1,5 @@
-$ipList = Read-Host "IPs: "
-$npacket = Read-Host "Packets: "
+$ipList = Read-Host "IPs"
+$npacket = Read-Host "Packets"
 
 $ipArray = $ipList -split ',' | ForEach-Object { $_.Trim() }
 
