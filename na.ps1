@@ -8,7 +8,7 @@ $outputFile = "results.csv"
 $results = @()
 
 foreach ($ipAddress in $ipArray) {
-    $pingResult = Test-Connection -ComputerName $ipAddress -Count 1 -ErrorAction SilentlyContinue
+    $pingResult = Test-Connection -ComputerName $ipAddress -Count $npacket -ErrorAction SilentlyContinue
 
     if ($pingResult) {
         $packetsTransmitted = $pingResult.Count

@@ -6,3 +6,8 @@
 |__/|__/_/_/ /_/     /_/ |_/\___/\__/ |__/|__/\____/_/  /_/|_/_/  |_/_/ /_/\__,_/_/\__, / /___/\___/_/     
                                                                                   /____/                   
 ```
+**`Steps`**
+1. Enable script execution:
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+```
